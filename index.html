@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>toJohn</title>
+    <title>Panda Nav</title>
     <link rel="stylesheet" href="./sources/css/Index.css">
 	<link rel="shortcut icon" href="sources/images/favicon.png"/>
     <script>
@@ -37,13 +37,7 @@
         }
 		function on_enter_key(){
 			if (event.keyCode==13){
-				var search_txt = document.getElementById("search-bar-input").value;
-				if (search_txt == "") {
-					alert("search text is empty ! ");
-					return false;
-				}
-				var search_url = "https://www.baidu.com/s?wd=" + search_txt;
-				window.open(search_url);
+				do_google_search()
 			}
 		}
     </script>
@@ -59,8 +53,8 @@
 <!---------------------------------------------------------------------------------------------------->
 <div id="search-bar">
     <input id="search-bar-input"  onkeydown="on_enter_key()" type="text" placeholder="search everything ..." autocomplete="off">
-	<button style="margin-left: 185px;" onclick="do_baidu_search()">Google</button><a class="close"></a>
-	<button onclick="do_google_search()">手气不错</button><a class="close"></a>
+	<button style="margin-left: 185px;" onclick="do_google_search()">谷歌一下</button><a class="close"></a>
+	<button onclick="do_baidu_search()">百度几下</button><a class="close"></a>
 </div>
 
 <!---------------------------------------------------------------------------------------------------->
