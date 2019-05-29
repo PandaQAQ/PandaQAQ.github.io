@@ -96,6 +96,7 @@ input::-webkit-input-placeholder{
     padding-left: 30px;
     padding-top: 16px;
     position: relative;
+    width: 900px;
     overflow: hidden;
     padding-bottom: 16px;
 }
